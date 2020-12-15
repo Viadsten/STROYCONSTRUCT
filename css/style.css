@@ -1363,6 +1363,157 @@
   max-width: 1160px;
   margin: 0 auto; }
 
+.equip-more-btn {
+  position: relative;
+  width: 120px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  font-weight: 300;
+  transition: .2s;
+  background-color: #fff; }
+  .equip-more-btn span {
+    position: absolute;
+    top: 0;
+    transition: ease-in .2s;
+    left: 0;
+    height: 21px;
+    width: 100%;
+    max-width: 18px;
+    background-color: #566FA0; }
+    .equip-more-btn span img {
+      position: absolute;
+      left: 7px;
+      top: 6px; }
+  .equip-more-btn p {
+    transition: .2s;
+    line-height: 21px;
+    padding-left: 15px;
+    z-index: 2;
+    position: relative; }
+  .equip-more-btn:hover span {
+    max-width: 100%; }
+  .equip-more-btn:hover p {
+    color: #fff; }
+
+.equip-wrp {
+  max-width: 900px;
+  margin-top: 150px;
+  margin-bottom: 110px; }
+
+.equip-card h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500; }
+
+.equip-card p {
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: -0.035em;
+  font-weight: 300;
+  line-height: 24px;
+  color: rgba(49, 49, 49, 0.7); }
+
+.equip-hr {
+  border: none;
+  height: 2px;
+  margin: 40px 0;
+  width: 100%;
+  background: radial-gradient(41.8% 3418929.19% at 52.24% 0.04%, #566FA0 0%, rgba(86, 111, 160, 0) 100%); }
+
+@media (min-width: 1120px) {
+  .equip-hr {
+    width: 140%;
+    max-width: 1160px;
+    margin-left: -20%; } }
+
+.equip-hr--modal {
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important; }
+
+.equip-modal {
+  left: 50%;
+  right: 50%;
+  width: 100%;
+  height: 100vh;
+  max-width: 1160px;
+  z-index: 10;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  padding-bottom: 50px;
+  transform: translate(-50%, 0%);
+  display: none;
+  background-image: url("../img/logo-modal-big.png");
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+
+.equip-modal__header {
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  margin-bottom: 50px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #F6F6F6; }
+
+.equip-modal-wrp {
+  height: calc(100vh - 80px);
+  width: 100%;
+  overflow-y: scroll; }
+
+.equip__modal-close {
+  position: absolute;
+  top: 22px;
+  right: 33px;
+  border: none;
+  background: rgba(0, 0, 0, 0); }
+
+@media (max-width: 600px) {
+  .equip-modal__header {
+    height: 100px;
+    line-height: 25px; }
+    .equip-modal__header p {
+      display: block;
+      text-align: left;
+      width: 90%;
+      margin-left: 10px;
+      padding-top: 20px; }
+  .equip-modal {
+    background-size: 40%; }
+  .equip__modal-close {
+    top: 30px;
+    right: 10px; } }
+
+.equip-modal__bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); }
+
+.equip-list {
+  margin-left: 7px;
+  color: #566FA0;
+  font-size: 20px; }
+  .equip-list span {
+    color: #313131;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px; }
+
+.equip-modal__title {
+  font-weight: 600;
+  font-size: 20px; }
+
+.modal-bottom {
+  height: 50px; }
+
 /** Montserrat Light **/
 @font-face {
   font-family: "Montserrat";
