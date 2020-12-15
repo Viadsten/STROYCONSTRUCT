@@ -8,7 +8,7 @@
     border: none;
 }
 .modal--project{
-    margin: 30px 0;
+    margin: 15px 0;
     .btn-wrp{
         bottom: -21px;
     }
@@ -101,13 +101,13 @@
 }
 
 .owl-nav{
-    right: 30px;
+    right: 16px;
     width: 147px;
     height: 42px;
     background-color: rgba(149, 163, 191, 0.6);    display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 3px;
+    bottom: 25px;
 }
 
 .owl-carousel .owl-nav button.owl-prev{
