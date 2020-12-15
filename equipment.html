@@ -59,10 +59,34 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a class="hover__link" href="index.html">Главная</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Проекты</li>
+                  <li class="breadcrumb-item active" aria-current="page">Оборудование</li>
                 </ol>
               </nav>
-          
+              <h2 class="project__h2 mb-1">Поставляемое оборудование</h2>
+              <p class="project__h2" style="font-size: 18px; margin-top: 0px; font-weight: 300;">Выберите бренд</p>
+              <section class="owl-carousel brand-wrp">
+                <img src="img/brand-1.png">
+                <img src="img/brand-1.png">
+                <img src="img/brand-1.png">
+                <img src="img/brand-1.png">
+              </section>
+              <script>$(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                  items:2,
+                  margin: 30,
+                  smartSpeed: 500,
+                  slideBy: 1, 
+                  responsive:{
+                    500:{
+                        items:3
+                    },
+                    800:{
+                        items:4
+                    }
+                }
+                });
+              });
+              </script>
             <div class="call-bg">
               <div class="container">
                 <div class="row call">

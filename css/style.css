@@ -1215,7 +1215,8 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 25px; }
+  bottom: 25px;
+  top: 202px; }
 
 .owl-carousel .owl-nav button.owl-prev {
   width: 50%;
@@ -1342,7 +1343,9 @@
     line-height: 33px;
     padding-bottom: 50px; }
   .owl-nav {
-    right: 60px; } }
+    right: 60px;
+    bottom: 30px;
+    top: unset; } }
 
 .show-more {
   width: 220px;
@@ -1355,6 +1358,10 @@
   .show-more p {
     font-size: 18px;
     font-weight: 300; }
+
+.brand-wrp {
+  max-width: 1160px;
+  margin: 0 auto; }
 
 /** Montserrat Light **/
 @font-face {
