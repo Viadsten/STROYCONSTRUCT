@@ -56,8 +56,10 @@
 
 *{
   margin: 0;
+  outline: none;
   padding: 0;
   //box-sizing: border-box;
+  -webkit-tap-highlight-color:transparent;
   font-family: "Montserrat" !important;
 }
 
@@ -75,6 +77,7 @@ button{
   -webkit-tap-highlight-color:transparent;
 }
 .page{
+  
 }
 
 .button{

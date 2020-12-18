@@ -2020,7 +2020,9 @@
 
 * {
   margin: 0;
+  outline: none;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
   font-family: "Montserrat" !important; }
 
 body {
