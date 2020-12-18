@@ -1835,7 +1835,8 @@
   margin-top: 50px; }
 
 .services-modal {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  max-height: 990px; }
 
 .services-modal__1row input, .services-modal__2row input {
   width: 100%;
