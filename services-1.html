@@ -31,7 +31,7 @@
                 <p class="logo-slogan">Услуги в области систем<br>кондиционирования и вентиляции</p>
               </div>
             </a>
-            <a href="#" class="nav-tel">
+            <a href="#" class="nav-tel"  data-toggle="modal" data-target="#callModal">
               <img src="img/tel.svg" width="33" height="33">
               <div class="tel-number-wrp">
                 <p class="tel-number">8-911-825-28-25</p>
@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse nav-list-wrp justify-content-around" id="navbarSupportedContent">
               <ul class="navbar-nav justify-content-center">
                <li class="nav-item"><a href="#" class="nav-link text-center link-hover">О нас</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link text-center">Услуги</a></li>
+                <li class="nav-item"><a href="services-1.html" class="nav-link text-center">Услуги</a></li>
                 <li class="nav-item"><a href="projects.html" class="nav-link text-center">Проекты</a></li>
                 <li class="nav-item"><a href="equipment.html" class="nav-link text-center">Оборудование</a></li>
                 <li class="nav-item"><a href="contacts.html" class="nav-link text-center">Контакты</a></li>
@@ -636,6 +636,35 @@
                       </div>
                     </div>
                     
+              </div>
+              <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
+                      <img src="img/X.svg" width="34" height="34">
+                    </button>
+                    <h3>Заказать обратный звонок</h3>
+                    <p>Если у Вас есть вопросы оставьте заявку и с Вами свяжется специалист</p>
+                    <div class="modal-centr-wrp">
+                      <div class="modal__left">
+                        <input type="text" class="input" placeholder="Имя" required>
+                        <input type="tel" class="input" placeholder="+7(___)___-__-__" required class="user-phone" title="Формат: +7(000)000-00-00">  
+                      </div>
+                      <div class="modal__right">
+                        <p class="modal-text">Удобное время для связи</p>
+                        <div class="modal__time-wrp">
+                          <span>с</span>
+                          <input type="time" value="9:00">
+                          <span>до</span>
+                          <input type="time">
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="button button-modal">Заказать звонок</button>
+  
+                  </div>
+                
+                </div>
               </div>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
             <script src="owl.carousel.js"></script>
