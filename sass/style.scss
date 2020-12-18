@@ -10,6 +10,8 @@
 @import "blocks/map.scss";
 @import "blocks/project.scss";
 @import "blocks/equipment.scss";
+@import "blocks/services-page.scss";
+@import "blocks/serv-adv.scss";
 
 
 /** Montserrat Light **/
@@ -43,6 +45,13 @@
   font-style: normal;
   src: url("../fonts/webfonts/Montserrat-Bold.woff2") format("woff2"),
        url("../fonts/webfonts/Montserrat-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Georgia/Georgia-Bold.woff") format("woff");
 }
 
 *{

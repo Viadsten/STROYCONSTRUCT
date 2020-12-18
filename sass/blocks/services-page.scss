@@ -1,0 +1,242 @@
+.services-cell{
+    width: 200px;
+    height: 233px;
+    display: block;
+    overflow: hidden;
+    margin-top: 25px;
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.services-cell--active{
+    height: 280px;
+    width: 300px;
+    margin-top: 0;
+}
+
+.services-cel--wrp{
+    padding-left: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+    //display: flex;
+    //align-items: center;
+}
+.services-page__p{
+    letter-spacing: -0.045em;
+    font-weight: 400;
+    max-width: 1210px;
+    padding: 0 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: rgba(49, 49, 49, 0.8);
+}
+.services-page__h3{
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+    max-width: 800px;
+    margin: 80px auto 40px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
+@media(min-width:900px){
+    .services-page__h3{
+        font-size: 35px;
+        line-height: 46px;
+        margin: 120px auto 70px;
+    }
+    .services-page__p{
+        margin-bottom: 120px;
+    }
+}
+
+.services-accordion{
+    padding: 0 20px;
+    max-width: 1210px;
+    margin: 0 auto 120px;
+}
+
+.card-header{
+    position: relative;
+    border: none;
+    background-color: #fff;
+}
+.accordion-marker{
+    height: 30px;
+    margin-top: -15px;
+    transition: .4s;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border: none;
+}
+.rotate-180{
+    transform: rotate(-180Deg);
+}
+
+.btn-accordion{
+    border-radius: 0px;
+    padding-right: 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.035em;
+    color: #415B6B;
+    &:hover{
+        color: #415B6B;
+        text-decoration: none;
+    }
+}
+
+.btn-accordion:after{
+    width: inherit;
+    display: block;
+    height: 3px;
+    margin-bottom: -3px;
+    content: '';
+    background-color: #566FA0;
+}
+
+.card-body{
+    height: auto;
+    padding: 30px 34px;
+}
+.services-accordion .card-header .collapsed:after{
+    background-image: url('../img/accordion-marker.svg');
+    position: absolute;
+    content: url('../img/accordion-marker--фаеук.svg');
+
+}
+
+.accordion .card{
+    border-radius: 0;
+    .card-header{
+        border-radius: 0;
+    }
+}
+
+.card-header:first-child{
+    border-radius: 0px;
+}
+/*
+.services-accordion .card-header:after{
+    background-image: url('../img/accordion-marker.svg');
+    position: absolute;
+    content: '';
+    background-position: center;
+    width: 40px;
+    height: 30px;
+    background-repeat: no-repeat;
+    top: calc(50% - 15px);
+    right: 15px;
+    
+    //transform: rotate(-90Deg);
+}
+
+.services-accordion .card-header .collapsed:after{
+    background-image: url('../img/accordion-marker.svg');
+    position: absolute;
+    content: url('../img/accordion-marker--фаеук.svg');
+
+}*/
+
+.accordion-list{
+    li{
+        color: #566FA0;
+        font-size: 20px;
+    }
+    li span{
+        color: #313131;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+.accordion-list__title{
+    margin: 5px 0 !important;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card__footer{
+    margin-top: 60px;
+    p{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 700px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #566FA0;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+    }
+    button{
+        margin: 40px auto 0;
+        display: block;
+        max-width: 470px;
+        width: 80%;
+    }
+}
+
+
+.services-cell{
+    position: relative;
+    h3{
+        color: #fff;
+        position: absolute;
+        top: calc(50% - 13px);
+        text-align: center;
+        width: 100%;
+        //margin-right: 15px;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: -0.065em;
+        line-height: 20px;
+    }
+}
+
+.services-cell--active{
+    h3{
+        color: #fff;
+        text-align: left;
+        position: absolute;
+        top: 24px;
+        left: 20px;
+        margin-right: 15px;
+        width: 90%;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: -0.065em;
+        line-height: 27px;
+    }
+    .services-cell__arrow-wrp{
+        position: absolute;
+        top: 180px;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        p{
+            color: #fff;
+            margin-left: 70px;
+            font-weight: 300;
+            margin-bottom: 25px;
+            margin-right: -60px;
+        }
+        .sc-arrow-img{
+            margin-right: -20px;
+        }
+    }
+}

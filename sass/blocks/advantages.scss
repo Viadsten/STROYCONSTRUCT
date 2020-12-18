@@ -49,6 +49,16 @@
     margin-bottom: 25px;
 }
 
+.advantages__numeral{
+    font-family: 'Georgia' !important;
+    background: linear-gradient(101.87deg, #053959 6.37%, #496373 73.05%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 100px;
+    line-height: 107px;
+    letter-spacing: -0.04em;
+}
+
 @media(min-width:600px){
     .adventages__wrp{
         display: flex;

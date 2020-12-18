@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link href="css/normalize.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="http://nbartlomiej.github.io/foggy/jquery.foggy.min.js"></script>
+
+        <title>СТРОЙКОНСТРАКШН</title>
+    </head>
+    <body class="page">
+      <svg style="display: none;">
+        <symbol viewBox="0 0 94 134" id="logo-icon">
+          <path  d="M51.762.58c-.244.192-.294.304-.334.73-.024.28-.109 3.047-.186 6.14-.077 3.09-.185 5.668-.227 5.706-.052.049-4.404 2.545-9.673 5.55-5.26 3.005-9.726 5.597-9.91 5.762-.497.455-.74.95-.876 1.798-.152.9-.012 1.517.476 2.076.194.234 2.41 1.704 5.965 3.963l5.656 3.606-.7 10.831c-.377 5.969-.7 10.916-.72 11.008-.011.104-2.302 1.778-5.6 4.09-3.066 2.161-5.583 3.955-5.588 3.996-.006.052.027.086.063.088.046.004 2.53-1.28 5.527-2.839 4.315-2.258 5.45-2.803 5.443-2.667.006.105-.171 2.949-.393 6.333-.222 3.385-.369 6.283-.323 6.444.073.319.425.627.736.65.31.023.728-.23.883-.532.11-.232.17-1.599.326-7.018.152-5.305.22-6.755.323-6.841.174-.145 7.217-3.804 7.309-3.797.046.003.019 2.042-.05 4.517-.07 2.485-.093 4.566-.055 4.631.048.066.093-.244.119-.776.255-5.245.447-8.61.5-8.66.032-.039 2.695-1.434 5.91-3.114 3.213-1.68 5.987-3.15 6.158-3.274.744-.521 1.118-1.896.81-2.965-.303-1.037-.47-1.185-6.375-5.427-3.028-2.178-5.53-3.973-5.546-3.995-.03-.055 1.064-21.165 1.127-21.704.04-.343.193-.467 5.298-4.352 2.896-2.195 5.27-4.02 5.275-4.072.014-.04-.019-.075-.073-.079-.046-.003-2.387 1.312-5.204 2.916-2.808 1.604-5.128 2.9-5.144 2.877-.023-.043.498-10.616.545-11.094.009-.072-.071-.256-.183-.4-.26-.375-.9-.433-1.289-.105zm-.993 25.367c-.133 5.452-.262 9.932-.282 9.951-.032.03-7.028-4.972-7.124-5.094-.024-.033-.012-1.393.04-3.021.052-1.619.051-2.948.006-2.95-.046-.004-.091.223-.091.537-.02 1.034-.317 4.978-.379 5.037-.032.04-1.364-.875-2.955-2.017s-2.883-2.084-2.873-2.094c.01-.01 3.14-2.386 6.959-5.287 4.111-3.121 6.94-5.216 6.949-5.132 0 .084-.107 4.607-.25 10.07zm-3.833 12.695a543.238 543.238 0 013.43 2.208c.056.077-.26 10.633-.311 10.755-.072.141-7.427 5.348-7.465 5.282-.023-.044.553-20.197.59-20.435.01-.094.077-.11.182-.06.088.038 1.703 1.056 3.574 2.25zm7.879 5.024c1.87 1.194 3.404 2.196 3.4 2.227-.012.03-1.725 1.265-3.807 2.735L50.616 51.3l.09-1.793c.41-7.965.427-8.194.564-8.1.068.047 1.665 1.063 3.545 2.258z"/>
+        </symbol>
+        <symbol viewBox="0 0 94 134" id="arrow">
+          <path  d="M51.762.58c-.244.192-.294.304-.334.73-.024.28-.109 3.047-.186 6.14-.077 3.09-.185 5.668-.227 5.706-.052.049-4.404 2.545-9.673 5.55-5.26 3.005-9.726 5.597-9.91 5.762-.497.455-.74.95-.876 1.798-.152.9-.012 1.517.476 2.076.194.234 2.41 1.704 5.965 3.963l5.656 3.606-.7 10.831c-.377 5.969-.7 10.916-.72 11.008-.011.104-2.302 1.778-5.6 4.09-3.066 2.161-5.583 3.955-5.588 3.996-.006.052.027.086.063.088.046.004 2.53-1.28 5.527-2.839 4.315-2.258 5.45-2.803 5.443-2.667.006.105-.171 2.949-.393 6.333-.222 3.385-.369 6.283-.323 6.444.073.319.425.627.736.65.31.023.728-.23.883-.532.11-.232.17-1.599.326-7.018.152-5.305.22-6.755.323-6.841.174-.145 7.217-3.804 7.309-3.797.046.003.019 2.042-.05 4.517-.07 2.485-.093 4.566-.055 4.631.048.066.093-.244.119-.776.255-5.245.447-8.61.5-8.66.032-.039 2.695-1.434 5.91-3.114 3.213-1.68 5.987-3.15 6.158-3.274.744-.521 1.118-1.896.81-2.965-.303-1.037-.47-1.185-6.375-5.427-3.028-2.178-5.53-3.973-5.546-3.995-.03-.055 1.064-21.165 1.127-21.704.04-.343.193-.467 5.298-4.352 2.896-2.195 5.27-4.02 5.275-4.072.014-.04-.019-.075-.073-.079-.046-.003-2.387 1.312-5.204 2.916-2.808 1.604-5.128 2.9-5.144 2.877-.023-.043.498-10.616.545-11.094.009-.072-.071-.256-.183-.4-.26-.375-.9-.433-1.289-.105zm-.993 25.367c-.133 5.452-.262 9.932-.282 9.951-.032.03-7.028-4.972-7.124-5.094-.024-.033-.012-1.393.04-3.021.052-1.619.051-2.948.006-2.95-.046-.004-.091.223-.091.537-.02 1.034-.317 4.978-.379 5.037-.032.04-1.364-.875-2.955-2.017s-2.883-2.084-2.873-2.094c.01-.01 3.14-2.386 6.959-5.287 4.111-3.121 6.94-5.216 6.949-5.132 0 .084-.107 4.607-.25 10.07zm-3.833 12.695a543.238 543.238 0 013.43 2.208c.056.077-.26 10.633-.311 10.755-.072.141-7.427 5.348-7.465 5.282-.023-.044.553-20.197.59-20.435.01-.094.077-.11.182-.06.088.038 1.703 1.056 3.574 2.25zm7.879 5.024c1.87 1.194 3.404 2.196 3.4 2.227-.012.03-1.725 1.265-3.807 2.735L50.616 51.3l.09-1.793c.41-7.965.427-8.194.564-8.1.068.047 1.665 1.063 3.545 2.258z"/>
+        </symbol>
+      </svg>
+        <header class="header">
+          <nav class="navbar navbar-expand-lg">
+            <a href="index.html" class="navbar-brand logo-wrp">
+              <img src="img/logo.png" width="44" height="44">
+              <div class="logo-text">
+                <p class="logo-name">СТРОЙКОНСТРАКШН</p>
+                <p class="logo-slogan">Услуги в области систем<br>кондиционирования и вентиляции</p>
+              </div>
+            </a>
+            <a href="#" class="nav-tel">
+              <img src="img/tel.svg" width="33" height="33">
+              <div class="tel-number-wrp">
+                <p class="tel-number">8-911-825-28-25</p>
+                <p class="tel-text">Заказать обратный звонок</p>
+              </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggle-line toggle-line--first"></span>
+              <span class="toggle-line toggle-line--second"></span>
+              <span class="toggle-line toggle-line--third"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-list-wrp justify-content-around" id="navbarSupportedContent">
+              <ul class="navbar-nav justify-content-center">
+               <li class="nav-item"><a href="#" class="nav-link text-center link-hover">О нас</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link text-center">Услуги</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link text-center">Проекты</a></li>
+                <li class="nav-item"><a href="equipment.html" class="nav-link text-center">Оборудование</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link text-center">Контакты</a></li>
+              </ul>
+            </div>
+          </nav>
+          <h1 style="display: none;">СТРОЙКОНСТРАКШН</h1>
+          
+        </header>
+        <main class="page-main">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a class="hover__link" href="index.html">Главная</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Услуги</li>
+                  <li class="breadcrumb-item active" aria-current="page">Проектирование систем вентиляции и кондиционирования</li>
+                </ol>
+              </nav>
+              <h2 class="project__h2 contact__h2">Услуги</h2>
+              <div class="owl-carousel services-cel--wrp">
+                <a class="services-cell services-cell--active">
+                  <img src="img/services-2.jpeg">
+                  <h3>Проектирование систем вентиляции и кондиционирования</h3>
+                  <div class="services-cell__arrow-wrp">
+                    <p>Подробнее</p>
+                    <img class="sc-arrow-img" src="img/Arrow.svg">
+                    <img class="sc-circle-img" src="img/Ellipse.svg">
+                  </div>
+                </a>
+                <a class="services-cell">
+                  <img src="img/services-1.jpeg">
+                  <h3>Монтаж</h3>
+                  <div class="services-cell__arrow-wrp">
+                    <img class="sc-arrow-img" src="img/Arrow.svg">
+                    <img class="sc-circle-img" src="img/Ellipse.svg">
+                  </div>
+                </a>
+                <a class="services-cell">
+                  <img src="img/services-4.jpeg">
+                  <h3>Пусконаладочные работы</h3>
+                  <div class="services-cell__arrow-wrp">
+                    <img class="sc-arrow-img" src="img/Arrow.svg">
+                    <img class="sc-circle-img" src="img/Ellipse.svg">
+                  </div>
+                </a>
+                <a class="services-cell">
+                  <img src="img/services-3.jpeg">
+                  <h3>Техническое обслуживание</h3>
+                  <div class="services-cell__arrow-wrp">
+                    <img class="sc-arrow-img" src="img/Arrow.svg">
+                    <img class="sc-circle-img" src="img/Ellipse.svg">
+                  </div>
+                </a>
+                <a class="services-cell">
+                  <img src="img/services-5.jpeg">
+                  <h3>Поставка оборудование</h3>
+                  <div class="services-cell__arrow-wrp">
+                    <img class="sc-arrow-img" src="img/Arrow.svg">
+                    <img class="sc-circle-img" src="img/Ellipse.svg">
+                  </div>
+                </a>
+              </div>
+             
+              <h3 class="services-page__h3">Проектирование систем вентиляции и кондиционирования</h3>
+              <p class="services-page__p">Проектирование внешних и внутренних инженерных сетей здания — это один из самых ответственных этапов строительства, реконструкции и капитального ремонта любого объекта. Правильно рассчитанные системы обеспечивают бесперебойную работу здания, а также здоровье и безопасность находящихся в нем людей. Выполнять проектирование крупных объектов могут только дипломированные специалисты- проектировщики.</p>
+              <div id="accordion" class="services-accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link btn-accordion" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Проектирование холодоснабжения<i class="accordion-marker"><img src="img/accordion-marker.svg"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="accordion-list__title">Существует разделение сетей наружного водопровода на виды в зависимости от назначения:</p>
+                          <ul class="accordion-list">
+                            <li><span>Хозяйственно-бытовые, предназначенные для снабжения зданий питьевой водой</span></li>
+                            <li><span>Технологические (производственные), служащие для подачи технической воды, например, для охлаждения машин, оборудования, механизмов, для использования воды в производственных и санитарно-технических целях</span></li>
+                            <li><span>Пожарные — служат для предотвращения и ликвидации пожаров</span></li>
+                            <li><span>Оросительно-поливочные — используются в целях орошения сельскохозяйственных культур и полива декоративных растений</span></li>
+                          </ul>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                          <div class="col-md-5  pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5 pr-md-0 pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="card__footer">
+                        <p>Все расчеты, входящие в состав проекта, выполняются инженерами компании «СТРОЙКОНСТРАКШН» по утвержденным методикам.</p>
+                        <button class="button equip-more-btn">Пригласить на тендер</button>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed btn-accordion" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Проектирование систем отопления<i class="accordion-marker"><img src="img/accordion-marker.svg"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="accordion-list__title">Существует разделение сетей наружного водопровода на виды в зависимости от назначения:</p>
+                          <ul class="accordion-list">
+                            <li><span>Хозяйственно-бытовые, предназначенные для снабжения зданий питьевой водой</span></li>
+                            <li><span>Технологические (производственные), служащие для подачи технической воды, например, для охлаждения машин, оборудования, механизмов, для использования воды в производственных и санитарно-технических целях</span></li>
+                            <li><span>Пожарные — служат для предотвращения и ликвидации пожаров</span></li>
+                            <li><span>Оросительно-поливочные — используются в целях орошения сельскохозяйственных культур и полива декоративных растений</span></li>
+                          </ul>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                          <div class="col-md-5  pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5 pr-md-0 pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="card__footer">
+                        <p>Все расчеты, входящие в состав проекта, выполняются инженерами компании «СТРОЙКОНСТРАКШН» по утвержденным методикам.</p>
+                        <button class="button equip-more-btn">Пригласить на тендер</button>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed btn-accordion" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Проектирование систем вентиляции и кондиционирования<i class="accordion-marker"><img src="img/accordion-marker.svg"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="accordion-list__title">Существует разделение сетей наружного водопровода на виды в зависимости от назначения:</p>
+                          <ul class="accordion-list">
+                            <li><span>Хозяйственно-бытовые, предназначенные для снабжения зданий питьевой водой</span></li>
+                            <li><span>Технологические (производственные), служащие для подачи технической воды, например, для охлаждения машин, оборудования, механизмов, для использования воды в производственных и санитарно-технических целях</span></li>
+                            <li><span>Пожарные — служат для предотвращения и ликвидации пожаров</span></li>
+                            <li><span>Оросительно-поливочные — используются в целях орошения сельскохозяйственных культур и полива декоративных растений</span></li>
+                          </ul>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                          <div class="col-md-5  pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5 pr-md-0 pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="card__footer">
+                        <p>Все расчеты, входящие в состав проекта, выполняются инженерами компании «СТРОЙКОНСТРАКШН» по утвержденным методикам.</p>
+                        <button class="button equip-more-btn">Пригласить на тендер</button>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed btn-accordion" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Проектирование водоснабжения<i class="accordion-marker"><img src="img/accordion-marker.svg"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="accordion-list__title">Существует разделение сетей наружного водопровода на виды в зависимости от назначения:</p>
+                          <ul class="accordion-list">
+                            <li><span>Хозяйственно-бытовые, предназначенные для снабжения зданий питьевой водой</span></li>
+                            <li><span>Технологические (производственные), служащие для подачи технической воды, например, для охлаждения машин, оборудования, механизмов, для использования воды в производственных и санитарно-технических целях</span></li>
+                            <li><span>Пожарные — служат для предотвращения и ликвидации пожаров</span></li>
+                            <li><span>Оросительно-поливочные — используются в целях орошения сельскохозяйственных культур и полива декоративных растений</span></li>
+                          </ul>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                          <div class="col-md-5  pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5 pr-md-0 pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="card__footer">
+                        <p>Все расчеты, входящие в состав проекта, выполняются инженерами компании «СТРОЙКОНСТРАКШН» по утвержденным методикам.</p>
+                        <button class="button equip-more-btn">Пригласить на тендер</button>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed btn-accordion" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Проектирование систем водоотведения<i class="accordion-marker"><img src="img/accordion-marker.svg"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="accordion-list__title">Существует разделение сетей наружного водопровода на виды в зависимости от назначения:</p>
+                          <ul class="accordion-list">
+                            <li><span>Хозяйственно-бытовые, предназначенные для снабжения зданий питьевой водой</span></li>
+                            <li><span>Технологические (производственные), служащие для подачи технической воды, например, для охлаждения машин, оборудования, механизмов, для использования воды в производственных и санитарно-технических целях</span></li>
+                            <li><span>Пожарные — служат для предотвращения и ликвидации пожаров</span></li>
+                            <li><span>Оросительно-поливочные — используются в целях орошения сельскохозяйственных культур и полива декоративных растений</span></li>
+                          </ul>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                          <div class="col-md-5  pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5 pr-md-0 pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="card__footer">
+                        <p>Все расчеты, входящие в состав проекта, выполняются инженерами компании «СТРОЙКОНСТРАКШН» по утвержденным методикам.</p>
+                        <button class="button equip-more-btn">Пригласить на тендер</button>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed btn-accordion" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Проектирование наружного водопровода<i class="accordion-marker"><img src="img/accordion-marker.svg"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="container">
+                        <div class="row">
+                          <p class="accordion-list__title">Существует разделение сетей наружного водопровода на виды в зависимости от назначения:</p>
+                          <ul class="accordion-list">
+                            <li><span>Хозяйственно-бытовые, предназначенные для снабжения зданий питьевой водой</span></li>
+                            <li><span>Технологические (производственные), служащие для подачи технической воды, например, для охлаждения машин, оборудования, механизмов, для использования воды в производственных и санитарно-технических целях</span></li>
+                            <li><span>Пожарные — служат для предотвращения и ликвидации пожаров</span></li>
+                            <li><span>Оросительно-поливочные — используются в целях орошения сельскохозяйственных культур и полива декоративных растений</span></li>
+                          </ul>
+                        </div>
+                        <div class="row d-flex justify-content-between">
+                          <div class="col-md-5  pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-md-5 pr-md-0 pl-0">
+                            <p class="accordion-list__title">Проект составляется на основании и с учетом:</p>
+                            <ul class="accordion-list">
+                              <li><span>Технического задания, выданного заказчиком</span></li>
+                              <li><span>Результатов инженерно-геодезических и геологических исследований</span></li>
+                              <li><span>Топографической карты местности</span></li>
+                              <li><span>Карты существующих инженерных сетей Генплана</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <footer class="card__footer">
+                        <p>Все расчеты, входящие в состав проекта, выполняются инженерами компании «СТРОЙКОНСТРАКШН» по утвержденным методикам.</p>
+                        <button class="button equip-more-btn">Пригласить на тендер</button>
+                      </footer>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="services-advantages">
+                <h2>Почему выбирают нас</h2>
+                <div class="row justify-content-center services-advantages--wrp">
+                  <div class="col-sm-6 col-md-4">
+                    <div class="serv-adv__numb-wrp">
+                      <span>01</span>
+                      <figcaption>
+                        <img src="img/dashicons_money.svg" alt="">
+                      </figcaption>
+                      <h5>Выгодно для владельцев</h5>
+                      <p>Более подробное описание каждого преимущества. Какой плюс</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="serv-adv__numb-wrp">
+                      <span>02</span>
+                      <figcaption>
+                        <img src="img/dashicons_money.svg" alt="">
+                      </figcaption>
+                      <h5>Команда экспертов</h5>
+                      <p>Более подробное описание каждого преимущества. Какой плюс</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="serv-adv__numb-wrp">
+                      <span>03</span>
+                      <figcaption>
+                        <img src="img/dashicons_money.svg" alt="">
+                      </figcaption>
+                      <h5>Выгодно для владельцев</h5>
+                      <p>Более подробное описание каждого преимущества. Какой плюс</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-center services-advantages--wrp">
+                  <div class="col-sm-6 col-md-4">
+                    <div class="serv-adv__numb-wrp">
+                      <span>01</span>
+                      <figcaption>
+                        <img src="img/dashicons_money.svg" alt="">
+                      </figcaption>
+                      <h5>Выгодно для владельцев</h5>
+                      <p>Более подробное описание каждого преимущества. Какой плюс</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="serv-adv__numb-wrp">
+                      <span>02</span>
+                      <figcaption>
+                        <img src="img/dashicons_money.svg" alt="">
+                      </figcaption>
+                      <h5>Команда экспертов</h5>
+                      <p>Более подробное описание каждого преимущества. Какой плюс</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4">
+                    <div class="serv-adv__numb-wrp">
+                      <span>03</span>
+                      <figcaption>
+                        <img src="img/dashicons_money.svg" alt="">
+                      </figcaption>
+                      <h5>Выгодно для владельцев</h5>
+                      <p>Более подробное описание каждого преимущества. Какой плюс</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <h2 class="project__h2">Реализованные проекты</h2>
+              <section class="news-wrp news-wrp--services">
+                <div class="slider-container">
+                  <div class="slider-track">
+                    <div class="slider-item">
+                      <div class="news__card1">
+                        <header>
+                          <img src="img/project1.jpeg">
+                          <h5>Проектирование систем вентиляции</h5>
+                          <p>Торговый центр «Авиапарк»</p>
+                        </header>
+                        <div class="card-body">
+                          <h3 class="h3-1">Задачи</h3>
+                          <p>Требование заказчика - высокая энергоэффективность при минимальных затратах.
+                          Это один из самых больших хладоцентров России: 6 холодильных машин обеспечивают суммарно 17 МВт холода.</p>
+                          <h3 class="h3-2">Используемое оборудование</h3>
+                          <p>Чиллеры Carrier 19XR - водоохлаждаемые холодильные машины с центробежным компрессором, 6 чиллеров производительностью по 3 МВт<br>
+                            Градирни Carrier FXVE<br>
+                            Драйкулеры Carrier FCTE<br>
+                            Фанкойлы 42N - универсальные вентиляторные доводчики<br>
+                            Фанкойлы 42GW - кассетные вентиляторные доводчики<br>
+                            Системы автоматизации (BMS) - ALC</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-item">
+                      <div class="news__card1">
+                        <header>
+                          <img src="img/project2.jpeg">
+                          <h5>Lorem ipsum dolor sit.</h5>
+                          <p>Lorem, ipsum.</p>
+                        </header>
+                        <div class="card-body">
+                          <h3 class="h3-1">Задачи</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cum iste tenetur fugit distinctio atque cupiditate quos error, quis dolore voluptatum dicta, quidem mollitia blanditiis nam ut! Quasi autem culpa at, magni fugiat debitis libero est quod provident, corporis ducimus.</p>
+                          <h3 class="h3-2">Используемое оборудование</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nihil possimus. Omnis, voluptatem? Temporibus tenetur laborum soluta repellendus cumque! Eveniet sed reiciendis itaque nostrum non rerum quo impedit commodi et quisquam veniam laborum iste expedita dicta ipsum nobis amet ea ullam blanditiis, consequatur excepturi harum? Placeat amet aliquid earum reprehenderit, at iusto nobis, expedita illo voluptatum nisi laboriosam libero enim aperiam magni modi voluptatem cupiditate? Quia voluptatem maxime veniam nihil porro sint amet placeat, earum dignissimos assumenda voluptatum eius distinctio harum sunt ex quos deleniti. Deserunt doloremque, dolorem ea consequuntur natus rerum officiis. Fuga suscipit perspiciatis nihil animi dolor iste consequatur id temporibus possimus ratione obcaecati in aut necessitatibus hic perferendis voluptatum, totam vero cum neque nemo inventore culpa. Sit molestiae, culpa et a sint praesentium voluptates dolore, quibusdam atque beatae sed est nisi? Magni vel nostrum nemo? Corrupti odit eaque voluptatem laudantium doloremque commodi quas totam temporibus quam consectetur!</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+                  </div>
+                </div>
+                <div class="btn-wrp">
+                  <button id="news-left" class="news__btn btn-prev"><svg width="23" height="32" class="news-btn-svg news_btn--left"><use xlink:href ="#news-btn"></use></svg></button>
+                  <button id="news-right" class="news__btn btn-next"><svg width="23" height="32" class="news-btn-svg news_btn--right"><use xlink:href ="#news-btn"></use></svg></button>
+                </div>
+              </section>
+            <div class="call-bg">
+                <h2 class="text-center">Напишите нам</h2>
+                <p class="text-center">Если у Вас не получилось связаться с нами, оставьте<br>заявку и с Вами свяжется специалист</p>
+              <div class="container">
+                <div class="row call contact-input-wrp">
+                  <div class="col-md">
+                    <input type="text" class="input w-100" placeholder="Имя" required>
+                    <input type="tel" class="input w-100" placeholder="+7(___)___-__-__" required class="user-phone" title="Формат: +7(000)000-00-00">
+                    <input type="email" class="input w-100 " placeholder="example@example.ru" required class="user-phone" title="Формат: +7(000)000-00-00">
+                  </div>
+                  <div class="col-md ">
+                    <textarea placeholder="Ваш вопрос..." class="input w-100 contacts--textarea"></textarea>
+                    <button type="submit" class="button w-100 contacts-call">Обратный звонок</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <style>
+              .page, .breadcrumb{
+                background-color: #fcfcfc;
+              }
+            </style>
+
+            <div class="footer-bg">
+              <footer class="page-footer">
+                <div class="logo-footer__wrp">
+                  <img src="img/logo.png" class="logo-footer__img" width="129" height="129">
+                  <p>ООО «СТРОЙКОНСТРАКШН»</p>
+                  <p>Услуги в области систем кондиционирования и<br> вентиляции</p>
+                </div>
+                <div class="footer__l-c-wrp">
+                  <ul class="footer__link-list">
+                    <li class="footer__link-item"><a href="#" class="footer__link">О нас</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Услуги</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Проекты</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Партнерам</a></li>
+                    <li class="footer__link-item"><a href="#" class="footer__link">Контакты</a></li>
+                  </ul>
+                  <div class="footer__contacts">
+                    <p class="footer__adress"><b>Адрес:</b> 196650, город Санкт-Петербург, город Колпино, Финляндская улица, дом 21 литера И, помещение 3</p>
+                    <p class="footer__adress footer__adress-1"><b>Электронный адрес:</b> info@s-const.com    <b>Телефон:</b> 8-911-825-28-25</p>
+                  </div>
+                </div>
+              </footer>
+            </div>
+
+            </div>
+
+            <div class="equip-modal__bg" onclick="close_equip_modal()"></div>
+            <div class="equip-modal services-modal">
+                <button class="equip__modal-close"><img src="img/X.svg"></button>
+                <div class="equip-modal__header"><p>Приглашение на тендер</p></div>
+                    <p class="services-modal__p">ДАВАЙТЕ СТАНЕМ ПАРТНЕРАМИ<br>Здесь вы сможете оставить информацию о проекте и свои контактные данные.</p>
+                    <p class="services-modal__p">Специалисты компании «СТРОЙКОНСТРАКШН» оперативно отреагируют на заявку, связавшись с вами по телефону.</p>
+                    <div class="container services-modal__body">
+                        <div class="services-modal__1row">
+                          <input type="text" placeholder="Ваше имя" class="input">
+                          <input type="text" placeholder="Организация" class="input">
+                        </div>
+                        <div class="services-modal__2row">
+                          <input type="tel" placeholder="Телефон для связи" class="input">
+                          <input type="email" placeholder="Электронная почта" class="input">
+                          <div class="row2__input-wrp">
+                            <p class="serv-modal-p-title">Выберите услуги которые Вас интересуют:</p>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="servicesRadio" id="servicesRadio1" value="option1" checked>
+                              <label class="form-check-label" for="servicesRadio1">
+                                Проектирование
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="servicesRadio" id="servicesRadio2" value="option2">
+                              <label class="form-check-label" for="servicesRadio2">
+                                Монтажные
+                              </label>
+                            </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="servicesRadio" id="servicesRadio3" value="option3" checked>
+                                <label class="form-check-label" for="servicesRadio3">
+                                  Пусконаладочные работы
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="servicesRadio" id="servicesRadio4" value="option4">
+                                <label class="form-check-label" for="servicesRadio4">
+                                  Сервисное обслуживание
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="services-modal__3row">
+                            <div class="row3__1coll ">
+                              <div class="row3__input-wrp mb-5">
+                                <p class="serv-modal-p-title">Описание проекта</p>
+                                <textarea class="input services-modal__textarea"></textarea>
+                              </div>
+                              <div class="row3__input-wrp">
+                                <p class="serv-modal-p-title">Ссылка на файл</p>
+                                <input type="text" class="input">
+                              </div>
+                            </div>
+                            <div class="row3__2coll">
+                              <p>
+                                <i>Или загрузите файл</i><br>PDF, DOC, DOCX, RTF, PPT, PPS, PPTX, JPEG, JPG, GIF, PNG, ZIP, RAR. Максимальный объем файла — 10 Мб
+                              </p>
+                              <div class="input-file-wrp">
+                                <input type="file" id="input__file" placeholder="Добавить файл">
+                                <label for="input__file" class="button">Добавить файл</label>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="button services-modal__subm-btn" type="submit">Оправить приглашение</button>
+                          <div class="modal-bottom"></div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    
+              </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+            <script src="owl.carousel.js"></script>
+            <script src="services.js"></script>
+            <script src="news.js"></script>
+            <script src="equip.js"></script>
+        </main>
+    </body>
+</html>
