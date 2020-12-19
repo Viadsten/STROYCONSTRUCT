@@ -138,30 +138,34 @@
 .nav-link:hover{
     color: inherit;
 }
-.nav-link{
-    &:after {
-        pointer-events: none; // чтоб не мешался
-        opacity: 0;
-        transition: ease opacity 0.3s;
-        transition-delay: .0s; // при убирании курсора анимация сразу сработает
-      }
-    
-      &:hover {
+
+@media(min-width:992px){
+    .nav-link{
         &:after {
-          opacity: 1;
-        }
-      }
+            pointer-events: none; // чтоб не мешался
+            opacity: 0;
+            transition: ease opacity 0.3s;
+            transition-delay: .0s; // при убирании курсора анимация сразу сработает
+          }
+        
+          &:hover {
+            &:after {
+              opacity: 1;
+            }
+          }
+    }
+    .nav-link::after{
+        transition: .2s;
+        opacity: 0;
+        margin-bottom: -3px;
+        content: "";
+        display: block;
+        height: 3px;
+        width: inherit;
+        background: linear-gradient(92.2deg, #95A3BF 25.37%, #5D7CA6 67.28%);
+    }
 }
-.nav-link::after{
-    transition: .2s;
-    opacity: 0;
-    margin-bottom: -3px;
-    content: "";
-    display: block;
-    height: 3px;
-    width: inherit;
-    background: linear-gradient(92.2deg, #95A3BF 25.37%, #5D7CA6 67.28%);
-}
+
 
 .nav-tel{
     &:hover{
@@ -187,7 +191,7 @@
         white-space: pre;
     }
 }
-  
+  /*
   .wrapper-menu {
     width: 30px;
     height: 20px;
@@ -232,6 +236,62 @@
   
   .open .line-menu.end {
     transform: rotate(-90deg) translateX(-2px);
+  }
+  */
+  
+  .wrapper-menu{
+    height:30px;
+    width:30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    &:hover{
+      cursor:pointer;
+    }
+  }
+  .hambergerIcon{
+    height: 3px;
+    width:30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    background-color: #313131;
+    transform: translate(-50%,-50%) rotate(0deg);
+    transition: all ease 0.5s;
+    &::before,&::after{
+      content:"";
+      position: absolute;
+      height: inherit;
+      border-radius: inherit;
+      background-color: inherit;
+      margin: auto;
+      width: 50%;
+      transition: all ease 0.5s;
+    }
+    &::before{
+      top: -10px;
+      left: 0;
+      transform-origin: left;
+    }
+    &::after{
+      bottom:-10px;
+      right: 0;
+      transform-origin: right;
+    }
+  }
+  
+  .open{
+    transform:translate(-50%,-50%) rotate(135deg);
+    &::before{
+      top:0;
+      transform: translateX(100%) rotate(-90deg);
+    }
+    &::after{
+      bottom:0;
+      transform: translateX(-100%) rotate(-90deg);
+    }
   }
   
   

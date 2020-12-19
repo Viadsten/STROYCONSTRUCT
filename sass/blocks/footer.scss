@@ -74,27 +74,29 @@
     }
 }
 
-.footer__link{
-    &:after {
-        pointer-events: none; // чтоб не мешался
-        opacity: 0;
-        transition: ease opacity 0.3s;
-        transition-delay: .0s; // при убирании курсора анимация сразу сработает
-      }
-    
-      &:hover {
+@media(min-width:992px){
+    .footer__link{
         &:after {
-          opacity: 1;
-        }
-      }
-}
-.footer__link::after{
-    transition: .2s;
-    opacity: 0;
-    margin-bottom: -3px;
-    content: "";
-    display: block;
-    height: 3px;
-    width: inherit;
-    background: linear-gradient(92.2deg, #95A3BF 25.37%, #5D7CA6 67.28%);
+            pointer-events: none; // чтоб не мешался
+            opacity: 0;
+            transition: ease opacity 0.3s;
+            transition-delay: .0s; // при убирании курсора анимация сразу сработает
+          }
+        
+          &:hover {
+            &:after {
+              opacity: 1;
+            }
+          }
+    }
+    .footer__link::after{
+        transition: .2s;
+        opacity: 0;
+        margin-bottom: -3px;
+        content: "";
+        display: block;
+        height: 3px;
+        width: inherit;
+        background: linear-gradient(92.2deg, #95A3BF 25.37%, #5D7CA6 67.28%);
+    }
 }

@@ -114,7 +114,7 @@
     text-align: center;
     font-size: 25px;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     height: 80px;
     line-height: 80px;
     background-color: #F6F6F6;
@@ -123,6 +123,7 @@
 .equip-modal-wrp{
     height: calc(100vh - 80px);
     width: 100%;
+    padding-top: 20px;
     overflow-y: scroll;
 }
 

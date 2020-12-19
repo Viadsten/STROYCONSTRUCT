@@ -115,8 +115,11 @@ if (mediaQuery960.matches) {
     project_carousel.classList.remove('owl-carousel-3');
  }
 
- var wrapperMenu = document.querySelector('.wrapper-menu');
 
- wrapperMenu.addEventListener('click', function(){
-   wrapperMenu.classList.toggle('open');  
- })
+
+
+ $(document).ready(function(){
+  $(".wrapper-menu").on('click',function(){
+    $(this).find(".hambergerIcon").toggleClass("open");
+  });
+})

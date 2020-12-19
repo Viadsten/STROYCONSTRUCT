@@ -87,7 +87,7 @@
 
 .btn-accordion{
     border-radius: 0px;
-    padding-right: 20px;
+    padding-right: 40px;
     text-align: left;
     font-weight: 600;
     font-size: 17px;
@@ -98,8 +98,10 @@
         text-decoration: none;
     }
 }
-
-.btn-accordion:after{
+.btn-accordion span{
+    display: block;  
+}
+.btn-accordion span:after{
     width: inherit;
     display: block;
     height: 3px;
@@ -108,7 +110,7 @@
     background-color: #566FA0;
 }
 
-.card-body{
+.card-body--services{
     height: auto;
     padding: 30px 34px;
 }
@@ -125,6 +127,20 @@
         border-radius: 0;
     }
 }
+@media(min-width:362px){
+    .equip-modal__header--services{
+       // line-height: 40px;
+       padding-right: 14px;
+    }
+}
+
+@media(min-width:375px) and (max-device-width: 601px){
+    .equip-modal__header--services{
+       line-height: 52px;
+       padding-right: 0px;
+    }
+}
+
 
 .card-header:first-child{
     border-radius: 0px;
