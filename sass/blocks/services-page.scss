@@ -98,10 +98,8 @@
         text-decoration: none;
     }
 }
-.btn-accordion span{
-    display: block;  
-}
-.btn-accordion span:after{
+
+.btn-accordion:after{
     width: inherit;
     display: block;
     height: 3px;
