@@ -34,7 +34,7 @@
               <img src="img/tel.svg" width="33" height="33">
               <div class="tel-number-wrp">
                 <p class="tel-number">8-911-825-28-25</p>
-                <p class="tel-text">Заказать обратный звонок</p>
+                <p class="tel-text">Заказать звонок</p>
               </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
             </button>
             <div class="collapse navbar-collapse nav-list-wrp justify-content-around" id="navbarSupportedContent">
               <ul class="navbar-nav justify-content-center">
-                <li class="nav-item"><a href="#" class="nav-link text-center link-hover">О нас</a></li>
+                <li class="nav-item"><a href="#about-us" class="nav-link text-center link-hover">О нас</a></li>
                 <li class="nav-item"><a href="services-1.html" class="nav-link text-center">Услуги</a></li>
                 <li class="nav-item"><a href="projects.html" class="nav-link text-center">Проекты</a></li>
                 <li class="nav-item"><a href="equipment.html" class="nav-link text-center">Оборудование</a></li>
@@ -58,10 +58,22 @@
             <div class="header__body">
               <h2 class="header__h2">Полный цикл работ<br>кондиционирования<br>и вентиляции</h2>
               <p>Защитите себя от лишних проблем с первого<br>дня использования вентиляционных систем</p>
-              <button type="button" class="button button--header" data-toggle="modal" data-target="#callModal">Бесплатная консультация</button>
+              <button type="button" class="button button--header" data-toggle="modal" data-target="#callModal">Заказать звонок</button>
             </div>
           </section>
         </header>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            var $page = $('html, body');
+            $('a[href*="#"]').click(function() {
+                $page.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top
+                }, 400);
+                return false;
+            });
+
+        });
+        </script>
         <main class="page-main">
             <h1 style=display:none;></h1>
             <ul id="services" class="owl-carousel owl-carousel-1 services__list">
@@ -143,7 +155,7 @@
             </script>
             <div class="grey-bg" style="background-color: #f2f2f2; padding-bottom: 60px;">
               <div class="adv-bg-wrp">
-                <section class="advantages">
+                <section class="advantages" id="about-us">
                   <div class="adventages__wrp">
                     <img src="img/adv-left.jpeg" class="advantages__left">
                     <div class="adventages__text-wrp">
@@ -221,7 +233,7 @@
                 </div>
               </section>
             </div>
-             <h2 class="project__h2" style="margin-top: 20px; margin-bottom: 40px;">Наши партнёры</h2>
+             <h2 class="project__h2" style="margin-top: 40px; margin-bottom: 40px;">Наши партнёры</h2>
 
              <section class="partners owl-carousel owl-carousel-2">
                <div><img src="img/partner1.png"></div>
@@ -265,7 +277,7 @@
                     <input type="tel" class="input w-100 mt-md-0" placeholder="+7(___)___-__-__" required class="user-phone" title="Формат: +7(000)000-00-00">
                   </div>
                   <div class="col-md ">
-                    <button type="submit" class="button w-100 mt-md-0">Обратный звонок</button>
+                    <button type="submit" class="button w-100 mt-md-0">Заказать звонок</button>
                   </div>
                 </div>
               </div>
@@ -274,8 +286,8 @@
               <footer class="page-footer">
                 <div class="logo-footer__wrp">
                   <img src="img/logo.png" class="logo-footer__img" width="129" height="129">
-                  <p>ООО «СТРОЙКОНСТРАКШН»</p>
-                  <p>Услуги в области систем кондиционирования и<br> вентиляции</p>
+                  <p>СТРОЙКОНСТРАКШН</p>
+                  <p>Услуги в области систем<br>кондиционирования и вентиляции</p>
                 </div>
                 <div class="footer__l-c-wrp">
                   <ul class="footer__link-list">
@@ -287,7 +299,7 @@
                   </ul>
                   <div class="footer__contacts">
                     <p class="footer__adress"><b>Адрес:</b> 196650, город Санкт-Петербург, город Колпино, Финляндская улица, дом 21 литера И, помещение 3</p>
-                    <p class="footer__adress footer__adress-1"><b>Электронный адрес:</b> info@s-const.com    <b>Телефон:</b> 8-911-825-28-25</p>
+                    <p class="footer__adress footer__adress-1"><b>Контакты:</b> info@s-const.com   <br> 8-911-825-28-25</p>
                   </div>
                 </div>
               </footer>
@@ -300,7 +312,7 @@
                   <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close">
                     <img src="img/X.svg" width="34" height="34">
                   </button>
-                  <h3>Заказать обратный звонок</h3>
+                  <h3>Заказать звонок</h3>
                   <p>Если у Вас есть вопросы оставьте заявку и с Вами свяжется специалист</p>
                   <div class="modal-centr-wrp">
                     <div class="modal__left">

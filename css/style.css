@@ -2,7 +2,7 @@
 .project__h2 {
   padding-left: 20px;
   letter-spacing: 0.03em;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 35px;
   line-height: 45px;
   margin: 60px 0 60px 5%;
@@ -34,7 +34,8 @@
     content: 'Используемое оборудование'; }
   .card-body p {
     font-size: 16px;
-    line-height: 22px;
+    line-height: 23px;
+    font-weight: 300;
     letter-spacing: -0.045em;
     margin: 30px 0; }
 
@@ -211,7 +212,7 @@
   opacity: 0.7; }
 
 .h3-2, .h3-1 {
-  font-size: 25px;
+  font-size: 23px;
   line-height: 34px; }
 
 .news-wrp {
@@ -236,9 +237,10 @@
       width: 43%; }
     .news__card1 .card-body {
       width: 57%;
-      height: 540px; }
+      height: 540px;
+      padding: 50px; }
   .news__card1 header h5 {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 42px;
     margin-top: 60px; }
   .news__card1 header p {
@@ -248,7 +250,7 @@
 
 @media (min-width: 1080px) {
   .news__card1 header h5 {
-    font-size: 40px;
+    font-size: 33px;
     line-height: 42px;
     margin-top: 60px; } }
 
@@ -682,7 +684,7 @@
     height: 48px !important; }
 
 .services__link {
-  transition: all .2s;
+  transition: all .3s;
   position: absolute;
   bottom: 35px;
   color: #fff;
@@ -728,7 +730,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    max-height: 310px;
+    max-height: 261px;
     height: calc(48vw / 1.8);
     position: absolute; }
     .services__item .services__item--bg {
@@ -739,13 +741,14 @@
     transition: .2s;
     margin: 0 auto;
     max-width: 1160px;
-    max-height: 650px;
+    max-height: 542px;
     margin-top: 70px;
     transition: all .35s;
     width: calc(100% - 40px);
     height: calc(100vw / 1.8); }
   .services__link {
-    display: none; }
+    transition: .2s;
+    opacity: 0; }
   .services__h3 {
     margin: 0px;
     text-align: center; }
@@ -791,19 +794,24 @@
       width: 49%;
       height: calc(100vw / 1.8 - 2%);
       z-index: 3;
-      max-height: 635px; }
+      max-height: 533px; }
       .services__list .service__active h3 {
-        font-size: 38px;
+        font-size: 31px;
         transition: .2s;
-        line-height: 47px;
-        margin-top: -150px; }
+        line-height: 42px;
+        margin-bottom: 70px;
+        text-align: left; }
       .services__list .service__active .services__link {
+        transition: .3s;
         margin-left: 60px;
+        opacity: 1;
         display: flex; }
         .services__list .service__active .services__link .arrow-img {
+          transition: .3s;
           width: 156px !important;
           margin-right: -55px; }
         .services__list .service__active .services__link .circle-img {
+          transition: .3s;
           width: 100px !important;
           height: 100px !important; }
       .services__list .service__active .services__link span {
@@ -860,6 +868,10 @@
   margin: 0 auto;
   width: 45%;
   margin-bottom: 25px; }
+
+.advantages__item-text {
+  text-transform: uppercase;
+  line-height: 20px; }
 
 .advantages__numeral {
   font-family: 'Georgia' !important;
@@ -938,7 +950,7 @@
     padding: 60px; } }
 
 .footer-bg {
-  background-color: #496373; }
+  background-color: #DDDDDD; }
 
 .page-footer {
   margin: 0 auto;
@@ -956,10 +968,11 @@
   .logo-footer__wrp img {
     margin-bottom: 22px; }
   .logo-footer__wrp p {
-    max-width: 240px;
+    max-width: 310px;
     display: block;
     margin-bottom: 0;
-    color: #fff; }
+    color: #313131;
+    font-weight: 300; }
 
 .footer__link-list {
   list-style: none;
@@ -969,14 +982,20 @@
 .footer__link-item {
   margin-bottom: 30px; }
   .footer__link-item a {
-    color: #fff;
+    color: #313131;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600; }
 
 .footer__contacts {
-  color: #fff;
+  color: #313131;
   font-size: 20px; }
+  .footer__contacts p b {
+    font-weight: 400;
+    margin-right: 15px; }
+  .footer__contacts p {
+    display: flex;
+    font-weight: 300; }
 
 @media (min-width: 900px) {
   .page-footer {
@@ -994,7 +1013,15 @@
     width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center; } }
+    justify-content: center; }
+  .footer__contacts {
+    max-width: 799px;
+    display: flex;
+    justify-content: space-between; }
+    .footer__contacts .footer__adress {
+      margin-right: 40px; }
+    .footer__contacts .footer__adress-1 {
+      margin-right: 0px; } }
 
 @media (min-width: 992px) {
   .footer__link:after {
@@ -1177,19 +1204,19 @@
   margin: 30px auto;
   margin-bottom: 50px; }
   .scores p {
-    font-size: 25px;
-    line-height: 33px;
+    font-size: 19px;
+    line-height: 53px;
     font-weight: 400;
     letter-spacing: -0.015em; }
 
 @media (min-width: 900px) {
   .map iframe {
-    height: 550px; }
+    height: 450px; }
   .map--modal {
-    margin-top: -445px;
+    margin-top: -395px;
     margin-left: 55%;
     margin-right: 0;
-    margin-bottom: 180px; } }
+    margin-bottom: 140px; } }
 
 @media (min-width: 900px) {
   .map--modal {
@@ -1203,7 +1230,7 @@
   margin-top: 13px !important; }
 
 .contact-input-wrp {
-  max-width: 630px;
+  max-width: 930px;
   margin: 0 auto; }
 
 .call-bg h2 {
@@ -1221,6 +1248,23 @@
 @media (min-width: 560px) {
   .call-bg p br {
     display: inline-block; } }
+
+@media (max-width: 960px) {
+  .contact-input-wrp div input {
+    width: 100%; } }
+
+.second-row-wrp {
+  width: 100%; }
+
+@media (min-width: 960px) {
+  .contacts--textarea {
+    width: 66% !important; }
+  .second-row-wrp {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: end; }
+    .second-row-wrp button {
+      width: 32% !important; } }
 
 .modal-close {
   position: absolute;
@@ -2104,11 +2148,12 @@ button {
   -webkit-tap-highlight-color: transparent; }
 
 .button {
-  background: linear-gradient(92.2deg, #95A3BF 25.37%, #5D7CA6 67.28%);
+  background: #95A3BF;
   box-shadow: 0px 12px 30px rgba(97, 127, 168, 0.54);
   width: 270px;
   height: 59px;
   border: none;
+  font-weight: 300;
   font-size: 14px;
   line-height: 59px;
   align-items: center;

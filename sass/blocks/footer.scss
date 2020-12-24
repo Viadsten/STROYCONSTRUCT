@@ -2,7 +2,7 @@
 
 
 .footer-bg{
-    background-color: #496373;
+    background-color: #DDDDDD;
 
 }
 .page-footer{
@@ -23,10 +23,11 @@
         margin-bottom: 22px;
     }
     p{
-        max-width: 240px;
+        max-width: 310px;
         display: block;
         margin-bottom: 0;
-        color: #fff;
+        color: #313131;
+        font-weight: 300;
     }
 }
 
@@ -39,7 +40,7 @@
 .footer__link-item{
     margin-bottom: 30px;
     a{
-        color: #fff;
+        color: #313131;
         text-decoration: none;
         font-size: 20px;
         font-weight: 600;
@@ -47,8 +48,15 @@
 }
 
 .footer__contacts{
-    color: #fff;
+    color: #313131;
     font-size: 20px;
+    p b{
+        font-weight: 400;
+        margin-right: 15px;
+    }
+    p{  display: flex;
+        font-weight: 300;
+    }
 }
 
 @media(min-width:900px){
@@ -71,6 +79,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .footer__contacts{
+        max-width: 799px;
+        display: flex;
+        justify-content: space-between;
+        .footer__adress{
+            margin-right: 40px;
+        }
+        .footer__adress-1{
+            margin-right: 0px;
+        }
     }
 }
 
