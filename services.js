@@ -1,9 +1,44 @@
+
+/*
 $('.owl-carousel').owlCarousel({
     margin:10,
     autoWidth:true,
     items:1
 })
+*/
+$(function() {
+    var owl = $('.owl-carousel'),
+        owlOptions = {
+            loop: false,
+            autoWidth:true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                }
+            }
+        };
 
+    if ( $(window).width() < 1060 ) {
+        var owlActive = owl.owlCarousel(owlOptions);
+    } else {
+        owl.addClass('off');
+    }
+
+    $(window).resize(function() {
+        if ( $(window).width() < 1060 ) {
+            if ( $('.owl-carousel').hasClass('off') ) {
+                var owlActive = owl.owlCarousel(owlOptions);
+                owl.removeClass('off');
+            }
+        } else {
+            if ( !$('.owl-carousel').hasClass('off') ) {
+                owl.addClass('off').trigger('destroy.owl.carousel');
+                owl.find('.owl-stage-outer').children(':eq(0)').unwrap();
+            }
+        }
+    });
+});
 
 $(document).ready(function(){
     $(".collapse.show").each(function(){
